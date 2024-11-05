@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лев Бакст - Главная</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: black;
+        }
+        header, nav, footer {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+        }
+        nav a.active {
+            font-weight: bold;
+        }
+        .content {
+            padding: 20px;
+            text-align: left;
+        }
+        .content h2 {
+            font-size: 2em;
+        }
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .thumbnail {
+            width: 100px;
+            height: auto;
+            cursor: pointer;
+        }
+        .photo {
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+        .logo {
+            width: 1900px;
+            height: 340px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+        .button-interesting {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #000;
+            color: white;
+            text-align: left;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 1.2em;
+            width: fit-content;
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Лев Бакст</h1>
+    <nav>
+        <a href="index.html" class="active">Главная</a>
+        <a href="pictures.html">Работы</a>
+        <a href="biography.html">Биография</a>
+        <a href="zadacha.html">Задача</a>
+        <a href="passport.html">Паспорт</a>
+        <a href="order.html">Заказать репродукцию</a>
+        <a href="form.html">Личный кабинет</a>
+    </nav>
+</header>
+
+<img src="images/pictures.jfif" alt="Картины" class="logo">
+
+
+<section id="description" class="content">
+    <h2>Кто такой Лев Бакст?</h2>
+    <p>Лев Самойлович Бакст (настоящее имя — Лейб-Хаим Израилевич Розенберг) — российский художник, сценограф, иллюстратор и дизайнер, работавший преимущественно в Санкт-Петербурге и Париже. Мастер станковой живописи и театральной графики, участник объединения «Мир искусства» и театрально-художественных проектов С.П. Дягилева, один из законодателей европейской моды на экзотику и ориентализм в начале XX века.
+    На нашем сайте вы сможете ознакомиться с творчеством художника и с его биографией, а также заказать репродукцию работ художника.</p>
+
+<section class="photo">
+    <a href="images/photo.jfif" target="_blank">
+        <img src="images/photo.jfif" alt="Миниатюра фото" class="thumbnail">
+    </a>
+</section>
+
+    <a href="biography.html#interesting" class="button-interesting">Интересные факты</a>
+</section>
+
+
+<footer>
+    <p>&copy; 2024 Lev Bakst</p>
+</footer>
+
+</body>
+</html>
