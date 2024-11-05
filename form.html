@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: black;
+        }
+        header, nav, footer {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+        }
+        nav a.active {
+            font-weight: bold;
+        }
+        .form-container {
+            margin: 0 auto;
+            padding: 20px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            width: 50%;
+        }
+        input, select {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="number"], input[type="date"], input[type="password"], input[type="tel"], input[type="email"] {
+            width: 97%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 0.8em;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        h2 {
+            margin-left: 340px;
+            font-size: 1.8em;
+            line-height: 1;
+        }
+        input[type="submit"] {
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+    <h1>Лев Бакст - Личный кабинет</h1>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="pictures.html">Работы</a>
+        <a href="biography.html">Биография</a>
+        <a href="zadacha.html">Задача</a>
+        <a href="passport.html">Паспорт</a>
+        <a href="order.html">Заказать репродукцию</a>
+        <a href="form.html" class="active">Личный кабинет</a>
+    </nav>
+</header>
+
+<section class="form-container">
+<form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+    <h2>Личные данные <input type="hidden"  name="q" value="search" ></h2>
+    <p>Имя<input type="Text" name="name" size=20  value="Иван"></p>
+    <p>Фамилия<input type="Text" name="last_name" size=20  value="Иванов"></p>
+    <p>Группа<input type="Number" name="group" size=20 value="7"></p>
+    <p>Телефон<input type="tel" name="tel" size=20 value="+79999999999"></p>
+    <p>Электронная почта<input type="email" name="email" size=20 value="ivanov@gmail.com"></p>
+
+
+    <p>Дата отправки сообщения<input type="date" name="user_date"  value='2024-10-22'></p>
+
+    <p>Пароль <input type="Password" name="password" size=9  value="1234"></p>
+
+
+    <p>
+        <input type="Submit" name="submit"  value="Отправить" style="margin-left: 380px; margin-top: 30px;">
+    </p>
+</form>
+</section>
+
+</body>
+</html>

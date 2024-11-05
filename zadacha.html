@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: black;
+        }
+        header, nav, footer {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+        }
+        nav a.active {
+            font-weight: bold;
+        }
+        .form-container {
+            margin: 0 auto;
+            padding: 20px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            width: 50%;
+        }
+        input {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="number"] {
+            width: 97%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 0.8em;
+        }
+        TEXTAREA {
+            width: 97%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 0.9em;
+            line-height: 1.1em;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+        }
+        h2 {
+            margin-left: 400px;
+            font-size: 1.8em;
+            line-height: 0.1em;
+        }
+        input[type="button"] {
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            margin-left: 380px;
+        }
+    </style>
+</head>
+
+    <header>
+    <h1>Лев Бакст - Задача</h1>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="pictures.html">Работы</a>
+        <a href="biography.html">Биография</a>
+        <a href="zadacha.html"  class="active">Задача</a>
+        <a href="passport.html">Паспорт</a>
+        <a href="order.html">Заказать репродукцию</a>
+        <a href="form.html">Личный кабинет</a>
+    </nav>
+</header>
+
+<body>
+    <section class="form-container">
+    <h2 name="formulation">Задача</h2>
+    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+            <p style="color: white; margin-left: 500px; font-size: 0em; padding: 0px;">Для поисковика:<input name="q" value="search" style="background-color: white; color: white; margin-left: 500px; border: none; font-size: 0em; padding: 0px"></p>
+            <p>Формулировка задачи
+                <br><textarea cols="60" rows="4" id="task" name="formulation">Даны вещественные положительные числа a, b, c, d. Выясните, может ли прямоугольник со сторонами a, b уместиться внутри прямоугольника со сторонами c, d так, чтобы каждая сторона внутреннего прямоугольника была параллельна или перпендикулярна стороне внешнего прямоугольника? Если может - отправить все на сервер</textarea></p>
+            <p>a <input id="a" name="a"  type="number" min="1" value="10"></p>
+            <p>b <input id="b"  name="b" type="number" min="1" value="20"></p>
+            <p>c <input id="c"  name="c" type="number" min="1" value="9"></p>
+            <p>d <input id="d"  name="d" type="number" min="1" value="19"></p>
+            <p>Результат решения задачи <input id="result" name="result" value="не определен" style="width: 97%; padding: 10px; border: none; border-radius: 5px; font-family: Arial, sans-serif; font-size: 0.9em;"></p>
+            <input id="verify" type="button" value="Проверить">
+            <input id="send" type="button" value="Отправить">
+    </form>
+</section>
+</body>
+<script src="zadacha.js"></script>
+
+</html>
