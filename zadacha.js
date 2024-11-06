@@ -1,9 +1,9 @@
 function verify() {
     console.log("a, b, c, d")
-    let a = parseInt(elementA.value);
-    let b = parseInt(elementB.value);
-    let c = parseInt(elementC.value);
-    let d = parseInt(elementD.value);
+    let a = parseFloat (elementA.value);
+    let b = parseFloat (elementB.value);
+    let c = parseFloat (elementC.value);
+    let d = parseFloat (elementD.value);
     console.log(a, b, c, d)
 
 
