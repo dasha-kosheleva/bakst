@@ -7,7 +7,7 @@ function verify() {
     console.log(a, b, c, d)
 
 
-    if ((a >= c && b >= d) || (a >= d && b >= c)) {
+    if ((a <= c && b <= d) || (a <= d && b <= c)) {
         result = "может"
         check = true;
     }
