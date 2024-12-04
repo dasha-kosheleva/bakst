@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог</title>
+    <link rel="stylesheet" type="text/css">
+    <script src="jquery-3.3.1.slim.min.js" defer></script>
+    <script src="popper.js" async></script>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="bootstrap.js" defer></script>
+    <link rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: rgb(255, 255, 255);
+        }
+        header, nav {
+            text-align: center;
+            margin-bottom: 10px;
+            color: black;
+            cursor: pointer;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+        }
+        nav a:hover {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #00000078;
+        }
+        nav a.active {
+            font-weight: bold;
+        }
+        .content {
+            padding: 20px;
+            text-align: left;
+        }
+        .content h2 {
+            font-size: 2em;
+        }
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .thumbnail {
+            width: 100px;
+            height: auto;
+            cursor: pointer;
+        }
+        .photo {
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+        .btn {
+        color: rgb(0, 0, 0);
+        background-color: #ffffff;
+        border: none;
+        padding-right: 10px;
+        } 
+        .btn:hover, .btn:focus, .btn:active {
+        background-color: rgba(255, 255, 255, 0.452);
+        color: rgb(0, 0, 0);
+        }
+        .btn:active {
+        background-color: rgba(255, 255, 255, 0.452);
+        color: rgb(0, 0, 0);
+        box-shadow: none;
+        }
+        .card-title {
+        padding-bottom: 10px;
+        }
+        .card {
+        margin-top: 30px;
+        background-color: black;
+        border-radius: 8px;
+        }
+        .card-img-top{
+            padding: 15px;
+        }
+        input[type="number"] {
+            width: 80px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 1em;
+        }
+    </style>
+  </head>
+
+  <body>
+    <!-- Главная панель -->
+    <header>
+        <h1>Лев Бакст - Каталог</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="shop.html" class="active">Каталог</a>
+            <a href="biography.html">Биография</a>
+            <a href="order.html">Заказать репродукцию</a>
+            <a href="form.html">Личный кабинет</a>
+        </nav>
+    </header>
+<!-- блок с колоннами -->
+    <div class="container text-center">
+        <div class="row">
+          <div class="col">
+                    <!-- карточка -->
+            <div class="card" style="width: 18rem;">
+                <img src="images/butterfly.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Бабочка. Эскиз костюма для Анны Павловой</h5>
+                  <p class="card-text">Цена 2300 р.</p>
+                   <!-- <p><input type="Number" name="group" value="0"></p> -->
+                  <a href="order.html" class="btn btn-primary">Заказать</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+                    <!-- карточка -->
+            <div class="card" style="width: 18rem;">
+                <img src="images/bluebog.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Эскиз костюма Синего Бога к балету «Синий Бог»</h5>
+                  <p class="card-text">Цена 3500 р.</p>
+                  <a href="order.html" class="btn btn-primary">Заказать</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+                    <!-- карточка -->
+            <div class="card" style="width: 18rem;">
+                <img src="images/shaherezada.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Одалиска. Эскиз костюма к балету «Шахерезада»</h5>
+                  <p class="card-text">Цена 2500 р.</p>
+                  <a href="order.html" class="btn btn-primary">Заказать</a>
+                </div>
+              </div>
+          </div>
+        </div>
+
+
+        <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/firebird.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Танцовщица из балета «Жар-птица»</h5>
+                      <p class="card-text">Цена 1900 р.</p>
+                      <a href="order.html" class="btn btn-primary">Заказать</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/kleopatra.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Эскиз костюма Клеопатры для Иды Рубинштейн к балету «Клеопатра»</h5>
+                      <p class="card-text">Цена 2500 р.</p>
+                      <a href="order.html" class="btn btn-primary">Заказать</a>
+
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/narciss.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Эскиз костюма к балету Н. Н. Черепнина "Нарцисс"</h5>
+                      <p class="card-text">Цена 3300 р.</p>
+                      <a href="order.html" class="btn btn-primary">Заказать</a>
+
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/sultansha.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Эскиз костюма Синей султанши к балету "Шахерезада"</h5>
+                      <p class="card-text">Цена 2200 р.</p>
+                      <a href="order.html" class="btn btn-primary">Заказать</a>
+
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/beotiyki.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Эскиз костюма беотийских девушек к балету Н. Н. Черепнина "Нарцисс"</h5>
+                      <p class="card-text">Цена 3500 р.</p>
+                      <a href="order.html" class="btn btn-primary">Заказать</a>
+
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/evrey.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Эскиз костюма для еврейского танца с тамбурином к балету "Клеопатра"</h5>
+                      <p class="card-text">Цена 2100 р.</p>
+                      <a href="order.html" class="btn btn-primary">Заказать</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
