@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjq6IbRdtsd/7cRGqc/XqJsDHbtzX5Lp1WyE+" crossorigin="anonymous"></script>
     <title>Лев Бакст - Главная</title>
     <style>
         body {
@@ -17,6 +21,11 @@
             margin: 0 15px;
             text-decoration: none;
             color: #000;
+        }
+        nav a:hover {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #00000078;
         }
         nav a.active {
             font-weight: bold;
@@ -60,6 +69,30 @@
             text-decoration: none;
             font-size: 1.2em;
             width: fit-content;
+        }
+        .button-interesting:hover {
+            background-color: rgba(0, 0, 0, 0.452);
+            color: rgb(255, 255, 255);
+        }
+        table {
+            width: 100%;
+            border: none;
+            border-color: white;
+        }
+        th, td {
+            border: none;
+            padding: 20px;
+            text-align: left;
+            vertical-align: top;
+            font-size: 1.2em;
+            line-height: 1.6;
+            font-family: Arial, sans-serif;
+            font-weight: lighter;
+        }
+        table img {
+            width: 200px;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -68,11 +101,8 @@
     <h1>Лев Бакст</h1>
     <nav>
         <a href="index.html" class="active">Главная</a>
-        <a href="pictures.html">Работы</a>
+        <a href="shop.html">Каталог</a>
         <a href="biography.html">Биография</a>
-        <a href="zadacha.html">Задача</a>
-        <a href="passport.html">Паспорт</a>
-        <a href="scrin.html">Скрин паспорта</a>
         <a href="order.html">Заказать репродукцию</a>
         <a href="form.html">Личный кабинет</a>
     </nav>
@@ -83,17 +113,25 @@
 
 <section id="description" class="content">
     <h2>Кто такой Лев Бакст?</h2>
-    <p>Лев Самойлович Бакст (настоящее имя — Лейб-Хаим Израилевич Розенберг) — российский художник, сценограф, иллюстратор и дизайнер, работавший преимущественно в Санкт-Петербурге и Париже. Мастер станковой живописи и театральной графики, участник объединения «Мир искусства» и театрально-художественных проектов С.П. Дягилева, один из законодателей европейской моды на экзотику и ориентализм в начале XX века.
+    <table>
+        <tr>
+            <th><a href="images/bakst_self.jpeg"> <img src="images/bakst_self.jpeg"> </a></th>
+            <th>Лев Самойлович Бакст (настоящее имя — Лейб-Хаим Израилевич Розенберг) — российский художник, сценограф, иллюстратор и дизайнер, работавший преимущественно в Санкт-Петербурге и Париже. Мастер станковой живописи и театральной графики, участник объединения «Мир искусства» и театрально-художественных проектов С.П. Дягилева, один из законодателей европейской моды на экзотику и ориентализм в начале XX века.
+                На нашем сайте вы сможете ознакомиться с творчеством художника и с его биографией, а также заказать репродукцию работ художника.</th>
+    </table>
+    <!-- <p> Лев Самойлович Бакст (настоящее имя — Лейб-Хаим Израилевич Розенберг) — российский художник, сценограф, иллюстратор и дизайнер, работавший преимущественно в Санкт-Петербурге и Париже. Мастер станковой живописи и театральной графики, участник объединения «Мир искусства» и театрально-художественных проектов С.П. Дягилева, один из законодателей европейской моды на экзотику и ориентализм в начале XX века.
     На нашем сайте вы сможете ознакомиться с творчеством художника и с его биографией, а также заказать репродукцию работ художника.</p>
 
 <section class="photo">
     <a href="images/photo.jpg" target="_blank">
         <img src="images/photo.jpg" alt="Миниатюра фото" class="thumbnail">
     </a>
-</section>
+</section> -->
 
     <a href="biography.html#interesting" class="button-interesting">Интересные факты</a>
 </section>
+
+
 
 
 </body>
